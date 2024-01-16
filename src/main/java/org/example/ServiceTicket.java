@@ -1,23 +1,38 @@
 package org.example;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class ServiceTicket {
-    public static Float medianPrice(List<Ticket> tickets){
-        List<Float> prices = new ArrayList<>();
-        for (Ticket ticket:tickets) {
-            prices.add(ticket.getPrice());
+
+
+    public static Float differenceBetweenAveragePriceMedianPriceVladivostokTelAviv(List<Ticket> tickets) {
+        List<Float> medianPrice = new ArrayList<>();
+        Float averagePrice = 0.0F;
+        int i =0;
+        for (Ticket ticket : tickets) {
+            if (ticket.getDepartureAirport().equals("Владивосток") && ticket.getArrivalAirport().equals("Тель-Авив")){
+                medianPrice.add(ticket.getPrice());
+                averagePrice+=ticket.getPrice();
+                i++;
+            }
         }
-        Collections.sort(prices);
-        return prices.get(prices.size()/2);
+        averagePrice = averagePrice/i;
+        Collections.sort(medianPrice);
+        return medianPrice.get(i/2)-averagePrice;
     }
-    public static Float averagePrice(List<Ticket>tickets){
-        Float price= 0.0F;
-        for (Ticket ticket:tickets) {
-            price += ticket.getPrice();
+
+    public static HashMap<String, Long> minTravelTimeVladivostokTelAviv(List<Ticket> tickets) {
+        HashMap<String, Long> minTravelTime = new HashMap<>();
+        for (Ticket ticket : tickets) {
+            if (ticket.getDepartureAirport().equals("Владивосток") && ticket.getArrivalAirport().equals("Тель-Авив")){
+                if (!minTravelTime.containsKey(ticket.getAirCarrier())) {
+                    minTravelTime.put(ticket.getAirCarrier(), ticket.getTravelTime());
+                } else if (ticket.getTravelTime() < minTravelTime.get(ticket.getAirCarrier())) {
+                    minTravelTime.put(ticket.getAirCarrier(), ticket.getTravelTime());
+                }
         }
-        return price/tickets.size();
+
+        }
+        return minTravelTime;
     }
 }
