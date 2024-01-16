@@ -1,0 +1,55 @@
+{
+  "tickets": [
+    {
+      "airCarrier": "S7",
+      "departureAirport": "Vladivostok",
+      "departureAirportUTC": "7",
+      "arrivalAirport": "Tel Aviv",
+      "arrivalAirportUTC": "2",
+      "departureDateTime": "2023-10-02 12:10",
+      "arrivalDateTime": "2023-10-02 14:10",
+      "price": "10000"
+    },
+    {
+      "airCarrier": "UTair",
+      "departureAirport": "Vladivostok",
+      "departureAirportUTC": "7",
+      "arrivalAirport": "Tel Aviv",
+      "arrivalAirportUTC": "2",
+      "departureDateTime": "2023-10-02 23:00",
+      "arrivalDateTime": "2023-10-03 01:20",
+      "price": "12000"
+    },
+    {
+      "airCarrier": "Aeroflot",
+      "departureAirport": "Vladivostok",
+      "departureAirportUTC": "7",
+      "arrivalAirport": "Tel Aviv",
+      "arrivalAirportUTC": "2",
+      "departureDateTime": "2023-10-02 23:00",
+      "arrivalDateTime": "2023-10-04 01:20",
+      "price": "9000"
+    },
+    {
+      "airCarrier": "Red Wings",
+      "departureAirport": "Vladivostok",
+      "departureAirportUTC": "7",
+      "arrivalAirport": "Tel Aviv",
+      "arrivalAirportUTC": "2",
+      "departureDateTime": "2023-10-02 12:10",
+      "arrivalDateTime": "2023-10-02 13:20",
+      "price": "18000"
+    },
+    {
+      "airCarrier": "UralAirline",
+      "departureAirport": "Vladivostok",
+      "departureAirportUTC": "7",
+      "arrivalAirport": "Tel Aviv",
+      "arrivalAirportUTC": "2",
+      "departureDateTime": "2023-10-02 12:10",
+      "arrivalDateTime": "2023-10-02 13:20",
+      "price": "7000"
+    }
+
+  ]
+}
