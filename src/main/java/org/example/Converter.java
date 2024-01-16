@@ -42,7 +42,7 @@ public class Converter {
 
                 Long travelTime =
                         (long) period.getDays() * 24 * 60 +
-                                duration.toMinutes() + 5*60;//TODO
+                                duration.toMinutes() + 8*60;//TODO
 
                 Ticket ticket = new Ticket(
                         jsonObjectItem.get("carrier").toString(),

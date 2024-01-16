@@ -18,7 +18,11 @@ public class ServiceTicket {
         }
         averagePrice = averagePrice/i;
         Collections.sort(medianPrice);
-        return medianPrice.get(i/2)-averagePrice;
+        if (medianPrice.size()%2==0){
+            return averagePrice-(medianPrice.get(i/2)+medianPrice.get(i/2-1))/2;
+        }else{
+        return averagePrice-medianPrice.get(i/2);
+        }
     }
 
     public static HashMap<String, Long> minTravelTimeVladivostokTelAviv(List<Ticket> tickets) {
