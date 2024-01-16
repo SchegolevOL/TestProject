@@ -9,5 +9,6 @@ public class Main {
         List<Ticket> tickets = Converter.toJavaObject(path);
         System.out.println(ServiceTicket.medianPrice(tickets));
         System.out.println(tickets);
+        System.out.println(ServiceTicket.medianPrice(tickets)+"|" + ServiceTicket.averagePrice(tickets)+" = " + (ServiceTicket.medianPrice(tickets)-ServiceTicket.averagePrice(tickets)));
     }
 }

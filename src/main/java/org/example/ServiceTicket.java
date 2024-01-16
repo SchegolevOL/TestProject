@@ -13,4 +13,11 @@ public class ServiceTicket {
         Collections.sort(prices);
         return prices.get(prices.size()/2);
     }
+    public static Float averagePrice(List<Ticket>tickets){
+        Float price= 0.0F;
+        for (Ticket ticket:tickets) {
+            price += ticket.getPrice();
+        }
+        return price/tickets.size();
+    }
 }
