@@ -25,6 +25,7 @@ public class ServiceTicket {
         HashMap<String, Long> minTravelTime = new HashMap<>();
         for (Ticket ticket : tickets) {
             if (ticket.getDepartureAirport().equals("Владивосток") && ticket.getArrivalAirport().equals("Тель-Авив")){
+                System.out.println(ticket.getAirCarrier()+"----"+ticket.getTravelTime());
                 if (!minTravelTime.containsKey(ticket.getAirCarrier())) {
                     minTravelTime.put(ticket.getAirCarrier(), ticket.getTravelTime());
                 } else if (ticket.getTravelTime() < minTravelTime.get(ticket.getAirCarrier())) {

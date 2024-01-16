@@ -1,10 +1,9 @@
 package org.example;
 
-import java.util.HashMap;
 import java.util.List;
 
 public class Main {
-    public static final String path = "C:\\Java Project\\TestProject\\src\\main\\resources\\1.json";
+    public static final String path = "C:\\Java Project\\TestProject\\src\\main\\resources\\tickets.json";
 
     public static void main(String[] args) {
 
