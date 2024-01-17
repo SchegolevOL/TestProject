@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Path myPath = Paths.get(PATH, "TestProject", "src", "main", "resources", "tickets.json");
+        Path myPath = Paths.get(PATH, "testproject", "src", "main", "resources", "tickets.json");
 
 
 
